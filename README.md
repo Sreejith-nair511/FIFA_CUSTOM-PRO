@@ -2,20 +2,20 @@
 
 A premium Next.js application for documenting and archiving FIFA 22 Player Career Mode achievements.
 
-## 🎯 Features
+## Features
 
-✅ **Career Management** — Create and manage multiple career saves  
-✅ **Player Tracking** — Track OVR progression and attributes over time  
-✅ **Match Logging** — Record every match with stats, ratings, and goals  
-✅ **Transfer History** — Document all club changes and transfer fees  
-✅ **Trophy Cabinet** — Archive all trophies and achievements  
-✅ **International Career** — Track World Cups and international achievements  
-✅ **Career Timeline** — Chronological record of career milestones  
-✅ **Media Archive** — Upload and organize FIFA screenshots  
-✅ **Analytics** — Career statistics, progression charts, performance insights  
-✅ **Premium UI** — Dark theme, cinematic design, smooth animations  
+Career Management — Create and manage multiple career saves
+Player Tracking — Track OVR progression and attributes over time
+Match Logging — Record every match with stats, ratings, and goals
+Transfer History — Document all club changes and transfer fees
+Trophy Cabinet — Archive all trophies and achievements
+International Career — Track World Cups and international achievements
+Career Timeline — Chronological record of career milestones
+Media Archive — Upload and organize FIFA screenshots
+Analytics — Career statistics, progression charts, performance insights
+Premium UI — Dark theme, cinematic design, smooth animations
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Frontend**: Next.js 16, React 19, TypeScript
 - **Styling**: Tailwind CSS 4.3, Lucide Icons
@@ -26,7 +26,7 @@ A premium Next.js application for documenting and archiving FIFA 22 Player Caree
 - **Charts**: Recharts
 - **Dates**: date-fns
 
-## 📋 Quick Start
+## Quick Start
 
 ### 1. Prerequisites
 
@@ -59,7 +59,7 @@ npm run dev
 
 Open http://localhost:3000
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 build-pitch-vault-career-app/
@@ -122,7 +122,7 @@ build-pitch-vault-career-app/
 └── README.md                   # This file
 ```
 
-## 🚀 Core API Endpoints
+## Core API Endpoints
 
 ### Careers
 - `GET /api/careers` — List user's careers
@@ -184,7 +184,7 @@ build-pitch-vault-career-app/
 - `GET /api/clubs?search=Barcelona` — Search clubs
 - `GET /api/competitions?search=Champions` — Search competitions
 
-## 📊 Data Validation
+## Data Validation
 
 All forms use Zod schemas with React Hook Form:
 
@@ -203,14 +203,14 @@ Validation happens:
 1. **Client-side**: Real-time feedback with React Hook Form
 2. **Server-side**: Always re-validated with Zod before insertion
 
-## 🔒 Security
+## Security
 
-- **Row Level Security (RLS)**: Users only access their own career data
-- **Authentication**: Supabase Auth with JWT tokens
-- **API Routes**: Protected with auth checks
-- **Storage**: Supabase Storage with RLS policies
+- Row Level Security (RLS): Users only access their own career data
+- Authentication: Supabase Auth with JWT tokens
+- API Routes: Protected with auth checks
+- Storage: Supabase Storage with RLS policies
 
-## 🎨 Design System
+## Design System
 
 Premium dark theme with:
 - Near-black backgrounds (`oklch(0.08 0 0)`)
@@ -221,7 +221,7 @@ Premium dark theme with:
 
 See `app/pitchvault.css` for complete design tokens.
 
-## 📈 Analytics
+## Analytics
 
 The analytics layer provides:
 
@@ -247,7 +247,7 @@ Additional functions:
 - `getOvrProgression(careerId)` — OVR over time
 - `getMatchRatingDistribution(careerId)` — Rating buckets
 
-## 🚢 Deployment
+## Deployment
 
 ### Supabase
 Already cloud-hosted. No additional setup needed.
@@ -258,25 +258,25 @@ Already cloud-hosted. No additional setup needed.
 3. Add environment variables in Vercel dashboard
 4. Deploy automatically on git push
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
-**"Missing Supabase environment variables"**
+"Missing Supabase environment variables"
 - Check `.env.local` has correct URL and keys
 
-**"Failed to fetch matches"**
+"Failed to fetch matches"
 - Ensure database tables are created (run SQL setup)
 - Check RLS policies allow your user
 
-**"CORS errors"**
+"CORS errors"
 - Supabase CORS is configured automatically
 - Check browser console for actual error
 
-**"Upload fails"**
+"Upload fails"
 - Ensure storage bucket exists and is public
 - Check file size < 5MB
 - Verify auth token is valid
 
-## 📚 Documentation
+## Documentation
 
 - `SETUP_INSTRUCTIONS.md` — Database schema & setup
 - `ARCHITECTURE.md` — System design & data flow
@@ -284,9 +284,9 @@ Already cloud-hosted. No additional setup needed.
 - [Next.js Docs](https://nextjs.org/docs)
 - [Zod Validation](https://zod.dev)
 
-## 🎮 Demo Data
+## Demo Data
 
-Includes a complete seed career for **Sakai Sree**:
+Includes a complete seed career for Sakai Sree:
 - 4 seasons (AS Saint-Étienne → Barcelona → Manchester United)
 - 160+ matches
 - 373 career goals
@@ -296,14 +296,14 @@ Includes a complete seed career for **Sakai Sree**:
 
 Enable in development by running seed script (to be created).
 
-## 📝 License
+## License
 
 MIT
 
-## 👤 Author
+## Author
 
 PITCHVAULT Development Team
 
 ---
 
-**Every Match. Every Move. Every Legacy.**
+Every Match. Every Move. Every Legacy.
